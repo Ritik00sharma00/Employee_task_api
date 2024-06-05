@@ -1,0 +1,102 @@
+[
+    {
+        "task": "Fix Bug",
+        "uniqueNumber": 1,
+        "task_id": "task001",
+        "employeeName": "John Doe",
+        "date": "01 June 2023",
+        "time": "10:00 AM",
+        "priority": "High",
+        "description": "Fix the login bug"
+    },
+    {
+        "task": "Develop Feature",
+        "uniqueNumber": 2,
+        "task_id": "task002",
+        "employeeName": "Jane Smith",
+        "date": "02 June 2023",
+        "time": "11:00 AM",
+        "priority": "Medium",
+        "description": "Develop the new user feature"
+    },
+    {
+        "task": "Code Review",
+        "uniqueNumber": 3,
+        "task_id": "task003",
+        "employeeName": "Alice Johnson",
+        "date": "03 June 2023",
+        "time": "02:00 PM",
+        "priority": "Low",
+        "description": "Review the latest code changes"
+    },
+    {
+        "task": "Update Documentation",
+        "uniqueNumber": 4,
+        "task_id": "task004",
+        "employeeName": "Bob Brown",
+        "date": "04 June 2023",
+        "time": "03:00 PM",
+        "priority": "Medium",
+        "description": "Update the API documentation"
+    },
+    {
+        "task": "Write Tests",
+        "uniqueNumber": 5,
+        "task_id": "task005",
+        "employeeName": "Charlie Davis",
+        "date": "05 June 2023",
+        "time": "04:00 PM",
+        "priority": "High",
+        "description": "Write unit tests for the new features"
+    },
+    {
+        "task": "Deploy to Production",
+        "uniqueNumber": 6,
+        "task_id": "task006",
+        "employeeName": "Dana Lee",
+        "date": "06 June 2023",
+        "time": "05:00 PM",
+        "priority": "High",
+        "description": "Deploy the latest version to production"
+    },
+    {
+        "task": "Design Mockups",
+        "uniqueNumber": 7,
+        "task_id": "task007",
+        "employeeName": "Eve Martin",
+        "date": "07 June 2023",
+        "time": "06:00 PM",
+        "priority": "Medium",
+        "description": "Design mockups for the new UI"
+    },
+    {
+        "task": "User Feedback",
+        "uniqueNumber": 8,
+        "task_id": "task008",
+        "employeeName": "Frank Wilson",
+        "date": "08 June 2023",
+        "time": "07:00 PM",
+        "priority": "Low",
+        "description": "Gather user feedback on the new features"
+    },
+    {
+        "task": "Optimize Performance",
+        "uniqueNumber": 9,
+        "task_id": "task009",
+        "employeeName": "Grace Kim",
+        "date": "09 June 2023",
+        "time": "08:00 PM",
+        "priority": "High",
+        "description": "Optimize the performance of the application"
+    },
+    {
+        "task": "Plan Sprint",
+        "uniqueNumber": 10,
+        "task_id": "task010",
+        "employeeName": "Hank Miller",
+        "date": "10 June 2023",
+        "time": "09:00 PM",
+        "priority": "Medium",
+        "description": "Plan the tasks for the next sprint"
+    }
+]
