@@ -20,15 +20,15 @@ router.post('/signup', registration);
 
 router.use(Auth_middleware);
 
-router.delete('/:task_id', deleteUser);
+router.delete('/delete', deleteUser);
 
 router.get('/', printAlltaskref);
 
-router.get('/:id', taskrefbyId);
+router.get('/get', taskrefbyId);
 
 router.post('/create',upload.single('photo'), createtaskref);
 
-router.put('/:task_id', updatetaskref);
+router.put('/update', updatetaskref);
 
 
 module.exports = router;

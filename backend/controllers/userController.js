@@ -4,7 +4,6 @@ const taskref = require('../model/user.js');
 exports.printAlltaskref = async (req, res) => {
     try {
         const taskrefs = await user_model.find();
-        console.log(taskrefs);
         res.json(taskrefs);
     } catch (err) {
         res.status(500).json({
@@ -15,9 +14,21 @@ exports.printAlltaskref = async (req, res) => {
 
 
 exports.taskrefbyId = async (req, res) => {
+    const {
+        employeeName
+    } = req.query
     try {
-        const taskrefs = await taskref.find(req.params.task_id);
-        res.json(taskrefs);
+        const taskrefs = await user_model.find({
+            employeeName
+        });
+        if (taskrefs.length === 0) {
+            return res.status(404).json({
+                message: 'Task references not found for the specified employee'
+            });
+        }
+        res.status(200).json(taskrefs);
+
+
     } catch (err) {
         res.status(500).json({
             message: err.message
@@ -32,9 +43,9 @@ exports.createtaskref = async (req, res) => {
     try {
         const {
             task,
-            uniqueNumber,
             employeeName,
             time,
+
             priority,
             description
 
@@ -44,7 +55,7 @@ exports.createtaskref = async (req, res) => {
 
         const newTask = new user_model({
             task,
-            uniqueNumber,
+
             employeeName,
             time,
             priority,
@@ -73,7 +84,7 @@ exports.updatetaskref = async (req, res) => {
         } = req.body;
 
         await taskref.updateOne({
-            task_id: req.params.task_id
+            employeeName: req.query.employeeName
         }, {
             $set: {
                 task,
@@ -95,9 +106,9 @@ exports.updatetaskref = async (req, res) => {
 
 exports.deleteUser = async (req, res) => {
     try {
-        const task_id = req.params.task_id;
+    const employeeName = req.query.employeeName;
         const deletedTask = await taskref.findOneAndDelete({
-            task_id
+            employeeName:employeeName
         });
 
         if (!deletedTask) {

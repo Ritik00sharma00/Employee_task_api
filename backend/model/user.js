@@ -28,7 +28,6 @@ userSchema.pre('save', async function(next) {
         this.task_id = nanoid(4);
     }
     if (this.isModified('task')) {
-        console.log('The task field has been modified.');
     }
     this.modifiedDate = new Date();
     next();
