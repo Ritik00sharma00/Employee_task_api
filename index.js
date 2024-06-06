@@ -8,8 +8,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true })); 
 
 
-const password = encodeURIComponent('1001ritik');
-mongoose.connect(`mongodb+srv://ritikSh:${password}@cluster0.kay1hct.mongodb.net/EmployeeTask?retryWrites=true&w=majority&appName=Cluster0`);
+// const password = encodeURIComponent('1001ritik');
+mongoose.connect(`mongodb+srv://ritikSh:1001ritik@cluster0.kay1hct.mongodb.net/EmployeeTask?retryWrites=true&w=majority&appName=Cluster0`);
 
 const db = mongoose.connection;
 
