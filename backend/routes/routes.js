@@ -18,17 +18,17 @@ router.post('/signup', registration);
 
 // router.get('/login', login);
 
-router.use(Auth_middleware);
+// router.use(Auth_middleware);
 
-router.delete('/delete', deleteUser);
+router.delete('/delete',Auth_middleware, deleteUser);
 
-router.get('/', printAlltaskref);
+router.get('/', Auth_middleware,printAlltaskref);
 
-router.get('/get', taskrefbyId);
+router.get('/get',Auth_middleware, taskrefbyId);
 
-router.post('/create',upload.single('photo'), createtaskref);
+router.post('/create',Auth_middleware,upload.single('photo'), createtaskref);
 
-router.put('/update', updatetaskref);
+router.put('/update',Auth_middleware, updatetaskref);
 
 
 module.exports = router;
