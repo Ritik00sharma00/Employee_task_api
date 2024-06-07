@@ -64,7 +64,7 @@ router.get('/', (req, res) => {
 
                 <div class="section">
                     <h2>Base URL</h2>
-                    <pre>http://yourapiurl.com/api</pre>
+                    <pre>https://employeetaskapi-production.up.railway.app/api/v1/</pre>
                 </div>
 
                 <div class="section">
@@ -265,7 +265,7 @@ Example Response:
 
                 <div class="section">
                     <h2>Contact Information</h2>
-                    <p>For support or feedback, please contact us at <a href="mailto:support@yourapiurl.com" style="color: red;">support@yourapiurl.com</a>.</p>
+                    <p>For support or feedback, please contact us at <a href="mailto:support@yourapiurl.com" style="color: red;">ritiksharmaformal@gmail.com</a>.</p>
                 </div>
             </div>
         </body>
